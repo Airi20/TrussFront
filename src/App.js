@@ -53,7 +53,7 @@ function App() {
     const payload = { nodes: cleanNodes, members };
 
     try {
-      const response = await fetch("http://localhost:8080/api/solve", {
+      const response = await fetch("https://trussback-1.onrender.com/api/solve", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
