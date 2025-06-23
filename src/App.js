@@ -56,6 +56,7 @@ function App() {
       const response = await fetch("https://trussback-1.onrender.com/api/solve", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        credentials: "include",  
         body: JSON.stringify(payload)
       });
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
